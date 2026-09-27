@@ -1,0 +1,11 @@
+---
+description: 硅基完成后经 Conductor 独立审计；仅 Principal 批准开合 PR
+alwaysApply: true
+---
+
+# Audit handoff + Conductor（强制）
+
+1. Implementer 完成全部代码/验证后：plan → `AWAITING_AUDIT`，case → `AUDIT_REQUESTED`，向 Conductor 交 `### AUDIT_REQUEST`。
+2. Conductor 启动**独立**审计；禁止本对话自评 PASS；禁止要求 Principal 做审计或写代码。
+3. Auditor 只更新 `audit/cases/<id>.md`（含悟仙四问轴）；结论回传 Conductor。
+4. Conductor 向 Principal 发 `### CONDUCTOR_REPORT`。`PASS` ≠ 可合并；`READY_FOR_PR` 后须 Principal 明示才开/合 PR。

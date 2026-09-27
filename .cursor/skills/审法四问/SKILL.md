@@ -7,8 +7,11 @@ description: 按悟仙契约审查 AI 生成或近期 diff：DRY、正交、可�
 
 生成之后用四个问题做可维护性审查。对应契约第 1–4 条，并联动第 5–7 条。
 
+启用完整流水线时：本 Skill 是 `audit/README.md` 的 **第四轴**。由 **Auditor**（`plan-auditor`）写入 `audit/cases/<id>.md`；Conductor 不得用「本对话随口四问」代替独立审计 PASS。
+
 ## 何时用
 
+- Auditor 裁决前（完整流水线下必做）
 - AI 刚完成大段生成或跨文件修改
 - 合并 / 开 PR 前
 - 感觉「能跑但心里没底」
