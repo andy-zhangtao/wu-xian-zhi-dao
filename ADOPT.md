@@ -7,9 +7,9 @@
 复制到宿主仓：
 
 - `.cursor/rules/wuxian-contract.mdc`
-- `.cursor/rules/plain-language.mdc`（对 Principal 的表达：通俗优先）
+- `.cursor/rules/output-style.mdc`（对 Principal 的表达：张涛输出文风）
 - （可选）三个工序 Skill：`曳光探路` / `审法四问` / `破窗重塑`
-- 根目录 `AGENTS.md` 中引用契约与通俗优先即可
+- 根目录 `AGENTS.md` 中引用契约与输出文风即可
 
 ## 完整采用（宪法 + Conductor 流水线）
 
@@ -21,7 +21,7 @@
 | `AGENTS.md` / `CLAUDE.md` | 仓库根（按宿主合并） |
 | `.cursor/rules/plan-first.mdc` | `.cursor/rules/` |
 | `.cursor/rules/audit-handoff.mdc` | `.cursor/rules/` |
-| `.cursor/rules/plain-language.mdc` | `.cursor/rules/`（若最小采用已拷可跳过） |
+| `.cursor/rules/output-style.mdc` | `.cursor/rules/`（若最小采用已拷可跳过；取代旧的 `plain-language.mdc`） |
 | `.cursor/skills/conductor` 等六个 Skill | `.cursor/skills/` |
 | `docs/plans/_TEMPLATE.md` | `docs/plans/` |
 | `audit/README.md`、`audit/_TEMPLATE.md` | `audit/` |

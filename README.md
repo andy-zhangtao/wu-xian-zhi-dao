@@ -17,7 +17,7 @@
 ├── .cursor/
 │   ├── rules/
 │   │   ├── wuxian-contract.mdc        # 始终生效的契约
-│   │   ├── plain-language.mdc         # 通俗优先（表达）
+│   │   ├── output-style.mdc           # 张涛输出文风（表达）
 │   │   ├── plan-first.mdc             # 无 LOCKED plan 不改产品路径
 │   │   └── audit-handoff.mdc          # 独立审计交接
 │   └── skills/
