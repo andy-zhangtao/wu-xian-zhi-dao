@@ -34,9 +34,9 @@
 
 ## 怎么用
 
-### 方式一：最小采用（仅契约）
+### 方式一：最小采用（仅契约 + 文风）
 
-只复制 `.cursor/rules/wuxian-contract.mdc`（可选再加三个工序 Skill）。
+复制 `.cursor/rules/wuxian-contract.mdc` 与 `.cursor/rules/output-style.mdc`（可选再加三个工序 Skill）。
 
 ### 方式二：完整流水线
 
