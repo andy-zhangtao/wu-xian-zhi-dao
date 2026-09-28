@@ -17,7 +17,7 @@
 ├── .cursor/
 │   ├── rules/
 │   │   ├── wuxian-contract.mdc        # 始终生效的契约
-│   │   ├── plain-language.mdc         # 通俗优先（表达）
+│   │   ├── output-style.mdc           # 张涛输出文风（表达）
 │   │   ├── plan-first.mdc             # 无 LOCKED plan 不改产品路径
 │   │   └── audit-handoff.mdc          # 独立审计交接
 │   └── skills/
@@ -34,9 +34,9 @@
 
 ## 怎么用
 
-### 方式一：最小采用（仅契约）
+### 方式一：最小采用（仅契约 + 文风）
 
-只复制 `.cursor/rules/wuxian-contract.mdc`（可选再加三个工序 Skill）。
+复制 `.cursor/rules/wuxian-contract.mdc` 与 `.cursor/rules/output-style.mdc`（可选再加三个工序 Skill）。
 
 ### 方式二：完整流水线
 

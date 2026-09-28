@@ -4,10 +4,10 @@
 
 1. [`agent.md`](./agent.md) — **工作流宪法**（Principal / Conductor / plan → 独立审计）  
 2. [`.cursor/rules/wuxian-contract.mdc`](./.cursor/rules/wuxian-contract.mdc) — 悟仙契约（质量否决权）  
-3. [`.cursor/rules/plain-language.mdc`](./.cursor/rules/plain-language.mdc) — 通俗优先（表达）  
+3. [`.cursor/rules/output-style.mdc`](./.cursor/rules/output-style.mdc) — 张涛输出文风（表达）  
 4. [`.cursor/rules/plan-first.mdc`](./.cursor/rules/plan-first.mdc) / [`audit-handoff.mdc`](./.cursor/rules/audit-handoff.mdc) — 写码前门禁与审计交接  
 
-冲突时：悟仙契约 > `agent.md` 门禁 > 采用方产品锁（若有）> 单次 plan。
+冲突时：悟仙契约 > `agent.md` 门禁 > 采用方产品锁（若有）> 单次 plan。表达方式以 `output-style.mdc` 为准。
 
 本仓库是**与业务无关**的 Bot 行动准则包。技术栈、目录轴、商业规则由宿主项目自行补充，勿把某一产品的约定写回本仓默认正文。采用步骤见 [`ADOPT.md`](./ADOPT.md)。
 
@@ -22,7 +22,7 @@
 3. **独立审计。** 开发与审计不得同一对话自审 PASS；向 Principal 只发 `CONDUCTOR_REPORT`。  
 4. **PASS ≠ 可合并。** 开/合 PR 须 Principal 明示。  
 5. **指令与契约冲突时**，先指出冲突与替代步骤，再动手。  
-6. **通俗优先。** 默认用通俗语言；仅当通俗易误解，或不用术语会违背最佳实践时，才用专业术语（权威条文：`.cursor/rules/plain-language.mdc`）。
+6. **输出像值班笔记。** 先现象后框架、保留推理与边界、工程语言有节制；禁营销/百科腔（权威条文：`.cursor/rules/output-style.mdc`）。
 
 ## 何时读哪个 Skill
 
@@ -37,7 +37,7 @@
 
 ## 轻量模式（未启用完整流水线时）
 
-若宿主仓尚未拷入 `agent.md` / plan / audit 目录，仍须遵守悟仙契约与通俗优先，并按需唤起「曳光探路 / 审法四问 / 破窗重塑」。一旦启用完整流水线，以 `agent.md` 为准。
+若宿主仓尚未拷入 `agent.md` / plan / audit 目录，仍须遵守悟仙契约与输出文风（`output-style.mdc`），并按需唤起「曳光探路 / 审法四问 / 破窗重塑」。一旦启用完整流水线，以 `agent.md` 为准。
 
 ## 输出习惯
 
