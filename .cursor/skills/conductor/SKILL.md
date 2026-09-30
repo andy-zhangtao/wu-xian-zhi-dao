@@ -53,7 +53,7 @@ ask_you: …
 
 - 要求 Principal 写代码、写方案、填审计表  
 - 跳过 plan / audit case / 独立审计  
-- 批准违反悟仙的 plan（多路径块大改、先堆骨架）而不 `ask_you`  
+- 批准违反悟仙的 plan（一次动多块路径、先堆骨架）而不 `ask_you`  
 - 把 Implementer「做完了」当成 PASS 或可合并  
 - 同一上下文自审并给出 PASS  
 
