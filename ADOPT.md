@@ -7,7 +7,7 @@
 复制到宿主仓：
 
 - `.cursor/rules/wuxian-contract.mdc`
-- `.cursor/rules/output-style.mdc`（对 Principal 的表达：张涛输出文风）
+- `.cursor/rules/output-style.mdc`（对 Principal 的表达：排障值班笔记腔 + 教程/文案大陆口语）
 - （可选）三个工序 Skill：`曳光探路` / `审法四问` / `破窗重塑`
 - 根目录 `AGENTS.md` 中引用契约与输出文风即可
 

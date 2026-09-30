@@ -4,7 +4,7 @@
 
 1. [`agent.md`](./agent.md) — **工作流宪法**（Principal / Conductor / plan → 独立审计）  
 2. [`.cursor/rules/wuxian-contract.mdc`](./.cursor/rules/wuxian-contract.mdc) — 悟仙契约（质量否决权）  
-3. [`.cursor/rules/output-style.mdc`](./.cursor/rules/output-style.mdc) — 张涛输出文风（表达）  
+3. [`.cursor/rules/output-style.mdc`](./.cursor/rules/output-style.mdc) — 张涛输出文风（排障笔记 + 教程/文案）  
 4. [`.cursor/rules/plan-first.mdc`](./.cursor/rules/plan-first.mdc) / [`audit-handoff.mdc`](./.cursor/rules/audit-handoff.mdc) — 写码前门禁与审计交接  
 
 冲突时：悟仙契约 > `agent.md` 门禁 > 采用方产品锁（若有）> 单次 plan。表达方式以 `output-style.mdc` 为准。
@@ -22,7 +22,7 @@
 3. **独立审计。** 开发与审计不得同一对话自审 PASS；向 Principal 只发 `CONDUCTOR_REPORT`。  
 4. **PASS ≠ 可合并。** 开/合 PR 须 Principal 明示。  
 5. **指令与契约冲突时**，先指出冲突与替代步骤，再动手。  
-6. **输出像值班笔记。** 先现象后框架、保留推理与边界、工程语言有节制；禁营销/百科腔（权威条文：`.cursor/rules/output-style.mdc`）。
+6. **输出分场景。** 排障像值班笔记；教程/文案用大陆口语、先卡点再步骤、可照抄、可勾选验收（权威条文：`.cursor/rules/output-style.mdc`）。
 
 ## 何时读哪个 Skill
 
