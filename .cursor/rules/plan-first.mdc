@@ -5,11 +5,11 @@ alwaysApply: true
 
 # Plan-first + Conductor（强制）
 
-主体见 `agent.md`：**Principal（碳基）零义务写码**；方案/代码/审计均由硅基完成。默认角色 **Conductor**。悟仙契约始终可否决「焊死骨架 / 一次多轴」的 plan。
+主体见 `agent.md`：**Principal（碳基）零义务写码**；方案/代码/审计均由硅基完成。默认角色 **Conductor**。悟仙契约始终可否决「焊死骨架 / 一次动多块路径」的 plan。
 
 改**产品路径**之前必须同时满足：
 
-1. 已有硅基产出的 `docs/plans/<id>.md` → `LOCKED`（不得要求 Principal 写 plan；plan 须薄路径、一次一轴）。
+1. 已有硅基产出的 `docs/plans/<id>.md` → `LOCKED`（不得要求 Principal 写 plan；plan 须薄路径、一次只动一块路径）。
 2. 已有 `audit/cases/<id>.md`（否则硅基生成，`PENDING`）。
 3. 否则：**停止写业务代码**。
 

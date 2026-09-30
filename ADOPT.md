@@ -30,7 +30,7 @@
 
 1. `.cursor/rules/project.mdc`（或等价名）  
    - 声明技术栈默认值（可逆）  
-   - 声明目录轴（一次一轴的路径表）  
+   - 声明路径块（「一次只动一块路径」的目录表）  
 2. 按需改写 `plan-first.mdc` 中的「产品路径」列表，使其匹配宿主目录。  
 3. 可选：`docs/PRD*.md`、`docs/TECH-SPEC*.md`、`docs/milestones/`。
 

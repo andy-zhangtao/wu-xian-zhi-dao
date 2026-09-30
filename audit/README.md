@@ -16,7 +16,7 @@
 
 `<plan-id>` 与方案文件同名。
 
-## 审计要点（四轴，缺一不可）
+## 审计要点（四项，缺一不可）
 
 ### A. 方案符合度（Plan fidelity）
 
@@ -41,7 +41,7 @@
 对照 `.cursor/rules/wuxian-contract.mdc` 与 Skill「审法四问」：
 
 1. 知识是否唯一？  
-2. 是否一次一轴？  
+2. 是否一次只动一块路径？  
 3. 决策是否可逆？  
 4. 是否显式而非巧合？  
 
@@ -51,7 +51,7 @@
 
 | VERDICT | 含义 | 后续 |
 |---------|------|------|
-| `PASS` | 四轴相对 LOCKED plan 无阻断项 | Conductor 可报 `READY_FOR_PR`；**开/合 PR 须 Principal 明示** |
+| `PASS` | 四项相对 LOCKED plan 无阻断项 | Conductor 可报 `READY_FOR_PR`；**开/合 PR 须 Principal 明示** |
 | `FAIL` | 存在阻断项 | Implementer 只修审计点；修完再次申请审计 |
 | `BLOCKED` | 缺方案、缺 case、或无法取到 diff | 硅基先补齐产物；不得要求 Principal 写代码 |
 
@@ -69,4 +69,4 @@
 - Implementer 自评 `PASS` 或自己改写 `audit/cases/` 结论
 - Auditor 为了变绿而修改产品代码或放宽验收项
 - 把「建议优化」写进 PASS 条件（优化另开 plan）
-- 跳过第四轴（悟仙四问）
+- 跳过第四项（悟仙四问）
