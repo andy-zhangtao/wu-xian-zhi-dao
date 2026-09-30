@@ -1,7 +1,7 @@
 # Agent 工作流宪法（《悟仙之道》）
 
 凡采用本仓库规范的 **AI Agent（硅基）** 必须遵守本文。  
-本文**不绑定任何业务领域、产品形态或技术栈**；栈与改动块划分由采用方在本地补充（见「采用方义务」）。
+本文**不绑定任何业务领域、产品形态或技术栈**；栈与路径块划分由采用方在本地补充（见「采用方义务」）。
 
 **代码质量否决权**：[`.cursor/rules/wuxian-contract.mdc`](./.cursor/rules/wuxian-contract.mdc)（悟仙契约）。  
 **审计总则**：[`audit/README.md`](./audit/README.md)（采用方拷入宿主仓后生效）。
@@ -13,7 +13,7 @@
 3. 采用方产品锁（若存在：PRD / TECH-SPEC / 里程碑等）  
 4. 单次 `docs/plans/<id>.md`（本切片范围）
 
-若某条 LOCKED plan 要求违反悟仙契约（例如一次多块大改、先堆骨架），Conductor **不得**按 plan 硬干，须 `ask_you` 拆切片或改 plan。
+若某条 LOCKED plan 要求违反悟仙契约（例如一次动多块路径的大改、先堆骨架），Conductor **不得**按 plan 硬干，须 `ask_you` 拆切片或改 plan。
 
 ## 主体公理（不可谈判）
 
@@ -59,7 +59,7 @@ Implementer / Auditor 不各自向 Principal 讲长篇故事。
 | **曳光探路** | 方向未定时，LOCKED plan **本身**须是薄路径方案（嵌曳光格式）；禁止用 plan 堆完整分层骨架 |
 | **审法四问** | Auditor 第四项；`PASS` 前须有四问结论（可写在 case 内） |
 | **破窗重塑** | 重构切片：plan 的 In scope 只能是一类破窗目标；本轮禁止功能增量 |
-| **一次一块** | plan 触及文件须落在采用方声明的**单一改动块**；跨块须拆 plan 或 Principal 明示同意 |
+| **一次只动一块路径** | plan 触及文件须落在采用方声明的**单一路径块**；跨路径块须拆 plan 或 Principal 明示同意 |
 
 ## 强制流水线（硅基执行，碳基拍板）
 
@@ -67,7 +67,7 @@ Implementer / Auditor 不各自向 Principal 讲长篇故事。
 Principal 提出需求（自然语言即可）
   → C0. Conductor 复述需求；范围不清则 ask_you，澄清前不 LOCK
   → 1. PLAN：Implementer（或 Conductor 代写）产出 docs/plans/<id>.md → LOCKED
-        （须符合悟仙：薄路径、一次一块；Principal 不写 plan）
+        （须符合悟仙：薄路径、一次只动一块路径；Principal 不写 plan）
   → 2. AUDIT_RULES：Auditor 创建 audit/cases/<id>.md（PENDING）
   → 3. IMPLEMENT：Implementer 写全部代码与测试；维护对照表
   → 4. AUDIT_REQUEST：Implementer → Conductor
@@ -126,7 +126,7 @@ ask_you: <需 Principal 拍板的问题，无则 none>
 
 拷贝本规范到宿主仓库后，采用方须自行补充且**不得**写回本上游仓作为默认：
 
-1. **改动块**：用本地 `.cursor/rules/`（建议文件名 `project.mdc`）声明一次一块的路径划分。  
+1. **路径块**：用本地 `.cursor/rules/`（建议文件名 `project.mdc`）声明「一次只动一块路径」的目录划分。  
 2. **产品路径清单**：在 `plan-first` 的采用方补丁中列出无 plan 禁止改动的路径。  
 3. **默认验证命令**：lint / build / test / 领域校验等，写进 plan 模板或 project rule。  
 4. **可选产品锁**：PRD、TECH-SPEC、里程碑——仅当宿主仓需要时创建。
