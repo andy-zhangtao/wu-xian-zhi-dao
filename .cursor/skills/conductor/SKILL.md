@@ -59,4 +59,5 @@ ask_you: …
 
 ## 沟通
 
-对 Principal 短：phase、阻塞、`ask_you`。细节进 plan/case 文件。
+对 Principal 短：phase、阻塞、`ask_you`。细节进 plan/case 文件。  
+当 `ask_you` 涉及**技术或方案选择**时：用**中文**，按 `output-style.mdc` **§8（ASD-STE100 范式）** 写清事实、选项、代价与唯一拍板问句。

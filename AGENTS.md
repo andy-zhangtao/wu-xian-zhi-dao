@@ -4,7 +4,7 @@
 
 1. [`agent.md`](./agent.md) — **工作流宪法**（Principal / Conductor / plan → 独立审计）  
 2. [`.cursor/rules/wuxian-contract.mdc`](./.cursor/rules/wuxian-contract.mdc) — 悟仙契约（质量否决权）  
-3. [`.cursor/rules/output-style.mdc`](./.cursor/rules/output-style.mdc) — 张涛输出文风（排障笔记 + 教程/文案）  
+3. [`.cursor/rules/output-style.mdc`](./.cursor/rules/output-style.mdc) — 张涛输出文风（排障 + 教程/文案 + 拍板 STE100）  
 4. [`.cursor/rules/plan-first.mdc`](./.cursor/rules/plan-first.mdc) / [`audit-handoff.mdc`](./.cursor/rules/audit-handoff.mdc) — 写码前门禁与审计交接  
 
 冲突时：悟仙契约 > `agent.md` 门禁 > 采用方产品锁（若有）> 单次 plan。表达方式以 `output-style.mdc` 为准。
@@ -22,7 +22,7 @@
 3. **独立审计。** 开发与审计不得同一对话自审 PASS；向 Principal 只发 `CONDUCTOR_REPORT`。  
 4. **PASS ≠ 可合并。** 开/合 PR 须 Principal 明示。  
 5. **指令与契约冲突时**，先指出冲突与替代步骤，再动手。  
-6. **输出分场景。** 排障像值班笔记；教程/文案用大陆口语、先卡点再步骤、可照抄、可勾选验收（权威条文：`.cursor/rules/output-style.mdc`）。
+6. **输出分场景。** 排障像值班笔记；教程/文案用大陆口语；**需要你拍板时，用中文按 ASD-STE100 范式说明技术/方案选项**（权威条文：`.cursor/rules/output-style.mdc` §8）。
 
 ## 何时读哪个 Skill
 
