@@ -3,18 +3,19 @@ name: plan-implementer
 description: >-
   Silicon Implementer under Conductor. Writes LOCKED thin-path plans and all
   code/tests (Principal has no duty to code). Submits AUDIT_REQUEST to
-  Conductor only. Domain-agnostic; host project supplies stack and directory axes.
+  Conductor only. Domain-agnostic; host project supplies stack and path blocks.
 ---
 
 # Plan Implementer（硅基：方案 + 代码）
 
-读 `agent.md`、悟仙契约、宿主 `project.mdc`（若有）。Principal **不负义务写代码/方案**；这些由你完成。不对 Principal 宣称可合并。
+读 `agent.md`、悟仙契约、`output-style.mdc` §10、宿主 `project.mdc`（若有）。Principal **不负义务写代码/方案**；这些由你完成。不对 Principal 宣称可合并。
 
 ## 开始前
 
 1. Conductor 已认可 `plan-id` 与需求复述。  
 2. 你撰写 `docs/plans/<id>.md` → `LOCKED`（模板 `docs/plans/_TEMPLATE.md`）。  
    - 必须含 **曳光薄路径**；一次只动一块路径；禁止完整分层骨架当首轮交付。  
+   - 用语遵守 `output-style.mdc` **§10**：软件工程术语为默认词表，一词一义，必要时半句人话点明，降低理解成本。  
    - 方向极不确定时先标 `SPIKE / THROW-AWAY` 学习原型，结论进正式 plan 再实现产品路径。  
 3. 无 audit case → 交回 Conductor/Auditor 生成 `PENDING`。  
 4. 你实现**全部**代码与 Required tests / 验证步骤；工具链以宿主已锁定文档/依赖版本为准，禁止凭训练记忆瞎编 API。
