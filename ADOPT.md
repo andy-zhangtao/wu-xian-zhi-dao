@@ -7,7 +7,7 @@
 复制到宿主仓：
 
 - `.cursor/rules/wuxian-contract.mdc`
-- `.cursor/rules/output-style.mdc`（表达：排障笔记腔 + 教程口语 + 拍板说明 STE100）
+- `.cursor/rules/output-style.mdc`（表达：排障笔记 + 教程口语 + 拍板 STE100 + 菜单/功能文案设计书原则）
 - （可选）三个工序 Skill：`曳光探路` / `审法四问` / `破窗重塑`
 - 根目录 `AGENTS.md` 中引用契约与输出文风即可
 
